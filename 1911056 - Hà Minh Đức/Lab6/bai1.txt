@@ -1,0 +1,21 @@
+﻿1. Thanh ghi PC dùng để chứa và đưa địa chỉ của lệnh được thực thi đến Input của Instruction memory
+2. Instruction memory chứa địa chỉ của các lệnh trong 1 chương trình.
+	Input: địa chỉ của câu lệnh sẽ được thực thi
+	Output: câu lệnh (machine code ở địa chỉ Input) được thực thi
+3. Registers là tập hợp 32 thanh ghi
+	Input: Địa chỉ của thanh ghi muốn truy cập|truy xuất đến; Dữ liệu cần viết lên 1 thanh ghi; Bit đọc|ghi
+	Output: Dữ liệu đọc được từ thanh ghi được truy cập ở Input
+4. Bộ ALU
+	Input: 2 toán hạng; ALU Control (Các bit biểu diễn phép toán thực hiện trên ALU)
+	Output: Bit Zero (nếu kết quả là số 0); Kết quả
+5. Bộ Control
+	Input: Opcode của machine code (opcode của Output của Instruction memory)
+	Output dùng để điều khiển ALU, thanh ghi PC, bộ nhớ chính, thanh ghi Registers
+6. Data memory (bộ nhớ chính) chứa dữ liệu
+	Input: Địa chỉ của dữ liệu muốn truy cập|truy xuất; Dữ liệu cần viết lên địa chỉ đó; Bit đọc|ghi
+	Output: Dữ liệu lấy được từ địa chỉ ở Input (nếu bit đọc = 1)
+7. Bộ chọn Mux có chức năng phân luồng thực thi của từng phần cứng (điều khiển Input, Output, Control)
+	VD: Với lệnh R-Type, ALUMux sẽ nhận vào bit chọn là 0, khi đó Output của Mux là dữ liệu đọc được từ thanh ghi
+	    Với lệnh I-Type, ALUMux sẽ nhận vào bit chọn là 1, khi đó Output của Mux là số
+8. Sign-extend (bộ mở rộng dấu) dùng để mở rộng dấu của số 16-bit truyền từ Instruction
+	VD: Với số 16-bit nếu là số âm, muốn giữ được tính chất số âm khi chuyển sang 32-bit thì dùng shift right arithmetic

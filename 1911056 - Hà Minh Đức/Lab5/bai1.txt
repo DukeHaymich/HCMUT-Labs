@@ -1,0 +1,5 @@
+﻿a) -2623488.0
+b) 0x4210A000
+c) Không biểu diễn chính xác được, vì khi nhân phần thập phân (0.2) cho số 2 mũ thì không bao giờ nhận được 1 số nguyên
+	Khoảng cách giữa 2 số thực liên tiếp không bằng nhau, vì sự thiếu chính xác như trên, và vì giữa 2 số exponent
+	của 2 số thực liên tiếp có thể khác nhau (VD: 0.999999 và 1.000000)
