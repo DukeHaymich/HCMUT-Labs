@@ -1,0 +1,5 @@
+Lệnh lw: 	RegDst=0, RegWrite=1, MemRead=1 , MemWrite=0, MemtoReg=1, Branch=0, Jump=0, ALUSrc=1
+Lệnh sw: 	RegDst=x, RegWrite=0, MemRead=0 , MemWrite=1, MemtoReg=x, Branch=0, Jump=0, ALUSrc=1
+Lệnh add: 	RegDst=1, RegWrite=1, MemRead=0 , MemWrite=0, MemtoReg=0, Branch=0, Jump=0, ALUSrc=0
+Lệnh beq: 	RegDst=x, RegWrite=0, MemRead=0 , MemWrite=0, MemtoReg=x, Branch=1, Jump=0, ALUSrc=0
+Lệnh j: 	RegDst=x, RegWrite=0, MemRead=0 , MemWrite=0, MemtoReg=x, Branch=x, Jump=1, ALUSrc=X
