@@ -1,0 +1,8 @@
+RegDst: Chọn thanh ghi đích sẽ được ghi lên đó.
+RegWrite: Tín hiệu cho phép|chặn ghi lên thanh ghi đích.
+MemRead: Cho phép đọc bộ nhớ (cho lệnh load).
+MemWrite: Cho phép ghi lên bộ nhớ (cho lệnh store).
+MemtoReg: Điều khiển giá trị sẽ được ghi lên thanh ghi (từ ALU hoặc từ bộ nhớ).
+Branch: Cho phép ghi địa chỉ nhảy đến lên thanh ghi PC nếu điều kiện nhảy thỏa mãn.
+Jump: Cho phép ghi địa chỉ nhảy đến lên thanh ghi PC vô điều kiện
+ALUSrc: Chọn toán hạng thứ 2 (thanh ghi hoặc hằng số) cho bộ ALU xử lý
