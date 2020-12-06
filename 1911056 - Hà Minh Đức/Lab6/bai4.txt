@@ -1,0 +1,10 @@
+Lệnh Load: Critical path: IM -> Reg -> Mux -> ALU -> DM -> Mux -> Reg
+	Execute time: IM + 2*Mux + 2*Reg + ALU + DM = 820ns
+Lệnh Store: Critical path: IM -> Reg -> Mux -> ALU -> DM
+	Execute time: IM + Mux + Reg + ALU + DM = 660ns
+Lệnh ALU: Critical path: IM -> Mux -> Reg -> Mux -> ALU -> Mux -> Reg
+	Execute time: IM + 3*Mux + 2*Reg + ALU = 630ns
+Lệnh Branch: Critical path: IM -> Reg -> Mux -> ALU -> Mux -> Mux
+	Execute time: IM + 3*Mux + Reg + ALU = 480ns
+Lệnh Jump: Critical path: IM -> Shift left -> Add -> Mux -> Mux
+	Execute time: IM + 2*Mux + Shift left + Add = 240ns
